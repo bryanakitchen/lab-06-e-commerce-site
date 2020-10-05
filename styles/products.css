@@ -1,0 +1,16 @@
+.wig {
+    width: 400px;
+    padding: 10px;
+    border: solid 1px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.wig > img {
+    width: 350px;
+
+}
+
+.wig > p {
+    margin: 0;
+}
