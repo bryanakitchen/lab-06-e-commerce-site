@@ -1,2 +1,2 @@
-import { wigs } from '../data.js';
+import { wigs } from '../data.js'; 
 
