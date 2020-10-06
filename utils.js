@@ -30,5 +30,7 @@ export function renderWig(wig) {
     li.appendChild(price);
     li.appendChild(button);
 
+    // change to (name, image, description...)
+
     return li;
 }

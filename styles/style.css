@@ -1,10 +1,12 @@
 
 body {
-    --color1: #ffffff;
-    --color2: #ffffff;
-    --color3: #ffffff;
-    --color4: #ffffff;
+    /* --color1: #ffffff; */
+    /* --color2: #ffffff; */
+    /* --color3: #ffffff; */
+    /* --color4: #ffffff; */
     --color5: #ffffff;
+
+/* FIX HEADER AND PRODUCTS PAGE THING  */
 
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
     /* --color1: hsla(349, 69%, 76%, 1);
@@ -25,7 +27,7 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    /* background-color: var(--color2); */
     background: rgb(29, 10, 10) url('../assets/wig-wall.jpg') no-repeat fixed center;
 }
 
@@ -61,7 +63,7 @@ section > ul {
     justify-content: space-around;
     align-items: center;
     font-size: 15px;
-    background-color: var(--color5);
+    /* background-color: var(--color5); */
 
 
     /* background-color: gray; */
