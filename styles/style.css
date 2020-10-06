@@ -26,6 +26,7 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    background: rgb(29, 10, 10) url('../assets/wig-wall.jpg') no-repeat fixed center;
 }
 
 main {
@@ -38,6 +39,8 @@ main {
 
 section {
     background-color: var(--color5);
+    /* background-color: rgb(29, 10, 10); */
+    /* opacity: 0.7; */
     width: 1000px;
     max-width: 80%;
     display: flex;
@@ -48,7 +51,20 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    font-size: 30px;
+    /* border: solid 2px var(--color1); */
+}
+
+section > ul {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    background-color: var(--color5);
+
+
+    /* background-color: gray; */
 }
 
 header {
@@ -80,6 +96,10 @@ h2 {
     animation: pulse 5s infinite ease-in-out;
 }
 
+section > a {
+    font-size: 20px;
+}
+
 header img {
     height: var(--header-height);
 }
@@ -105,21 +125,3 @@ footer {
     box-shadow: var(--shadow);
 }
   
-  @keyframes pulse {
-    20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
-    }
-
-    40% {
-        transform: rotate3d(10, 10, -10, 50deg) scale(1);
-    }
-
-    60% {
-        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
-
-    80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
-    }
-
-  }

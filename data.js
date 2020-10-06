@@ -31,7 +31,7 @@ export const wigs = [
         image: 'the-luau-lob.jpg',
         description: 'We learn that this wig\'s name is Maureen, and "she doesn\'t like to be manhandled." She certainly has a lot of personality, as is evidenced by the blonde layered over slightly longer black. It\'s a weird look, and no one but Moira could pull it off so effortlessly.',
         category: 'going out',
-        price: 57.50,
+        price: 57.99,
     },
     {
         id: 'queen123',
@@ -47,6 +47,6 @@ export const wigs = [
         image: 'existential-crisis-bob.jpg',
         description: 'Moira dons this gray number after being frustrated about what people are saying about her online. It frames her face well, but it\'s a bit too ordinary for the great Moira Rose to wear on a daily basis.',
         category: 'staying in',
-        price: 20.20,
+        price: 20.21,
     },
 ];
