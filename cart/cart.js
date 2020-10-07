@@ -1,6 +1,7 @@
 import { wigs } from '../data.js';
 import { renderTableRow, CART, getFromLocalStorage } from '../utils.js';
 import { calculateTotal } from './cart-utils.js';
+import { clearCart } from './cart-api.js';
 
 const cart = getFromLocalStorage(CART) || [];
 
@@ -25,7 +26,7 @@ orderButton.addEventListener('click', () => {
     
     alert(stringCart);
     
-    localStorage.removeItem(CART);
+    clearCart(CART);
 
-    window.location.href='/';
+    window.location.href = '/';
 });

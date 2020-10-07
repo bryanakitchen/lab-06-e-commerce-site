@@ -13,7 +13,7 @@ test('Test should take in a cartItem and return an table row with the appropriat
         quantity: 2,
     };
     
-    const expected = '<tr><td>The Ms. Frizzle</td><td>2</td><td>$89.98</td></tr>';
+    const expected = '<tr><td>The Ms. Frizzle</td><td>2</td><td>$88</td></tr>';
     
     //Act 
     // Call the function you're testing and set the result to a const

@@ -14,10 +14,10 @@ test('Test should take in a Wig and return an li with the appropriate contents.'
         imageAlt: 'The Ms. Frizzle Wig',
         description: 'A look that screams "kooky grade school teacher takes students on a field trip," but cute.',
         category: 'going out',
-        price: 44.99,
+        price: 44,
     };
     
-    const expected = '<li class="wig"><p class="name">The Ms. Frizzle</p><img class="image" src="../assets/the-ms-frizzle.jpg" alt="The Ms. Frizzle Wig"><p class="description">A look that screams "kooky grade school teacher takes students on a field trip," but cute.</p><p class="price">$44.99</p><button>Add to Cart</button></li>';
+    const expected = '<li class="wig"><p class="name">The Ms. Frizzle</p><img class="image" src="../assets/the-ms-frizzle.jpg" alt="The Ms. Frizzle Wig"><p class="description">A look that screams "kooky grade school teacher takes students on a field trip," but cute.</p><p class="price">$44</p><button>Add to Cart</button></li>';
     
     //Act 
     // Call the function you're testing and set the result to a const

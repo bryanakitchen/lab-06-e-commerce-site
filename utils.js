@@ -1,3 +1,4 @@
+import { addToCart } from './cart/cart-api.js';
 import { wigs } from './data.js';
 
 export const CART = 'CART';
@@ -28,20 +29,8 @@ export function renderWig(wig) {
     button.textContent = 'Add to Cart';
 
     button.addEventListener('click', () => {
-        
-        const cart = getFromLocalStorage(CART) || [];
-        const itemInCart = findById(cart, wig.id);
-
-        if (itemInCart === undefined) {
-            const newCartItem = {
-                id: wig.id,
-                quantity: 1
-            };
-            cart.push(newCartItem);
-        } else {
-            itemInCart.quantity++;
-        }
-        setInLocalStorage(CART, cart);
+    
+        addToCart(wig);
     });
     
     li.append(name, image, description, price, button);
