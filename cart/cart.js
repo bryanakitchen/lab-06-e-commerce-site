@@ -28,5 +28,5 @@ orderButton.addEventListener('click', () => {
     
     clearCart(CART);
 
-    window.location.href = '/';
+    window.location.href = '../index.html';
 });
