@@ -17,3 +17,15 @@ for (let i = 0; i < cart.length; i++) {
 const totalCell = document.querySelector('#total-price');
 const total = calculateTotal(wigs, cart);
 totalCell.textContent = `$${total}`;
+
+const orderButton = document.getElementById('order-button');
+
+orderButton.addEventListener('click', () => {
+    const stringCart = JSON.stringify(cart, true, 2);
+    
+    alert(stringCart);
+    
+    localStorage.removeItem(CART);
+
+    window.location.href='/';
+});

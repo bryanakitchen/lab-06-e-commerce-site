@@ -41,12 +41,14 @@ export function renderWig(wig) {
         } else {
             itemInCart.quantity++;
         }
+        setInLocalStorage(CART, cart);
     });
     
     li.append(name, image, description, price, button);
 
     return li;
 }
+
 export function findById(someArray, someId) {
     for (let i = 0; i < someArray.length; i++) {
         const item = someArray[i];
