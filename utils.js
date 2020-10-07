@@ -1,4 +1,4 @@
-import { wigs } from "./data.js";
+import { wigs } from './data.js';
 
 export function renderWig(wig) {
     const li = document.createElement('li');
@@ -29,7 +29,6 @@ export function renderWig(wig) {
 
     return li;
 }
-
 export function findById(someArray, someId) {
     for (let i = 0; i < someArray.length; i++) {
         const item = someArray[i];
@@ -44,7 +43,7 @@ export function renderTableRow(cartItem) {
     const tr = document.createElement('tr');
     const tdName = document.createElement('td');
     const tdQuantity = document.createElement('td');
-    const tdTotal = document.createElement('td');
+    const tdSubtotal = document.createElement('td');
 
     tdQuantity.textContent = cartItem.quantity;
     
@@ -55,11 +54,11 @@ export function renderTableRow(cartItem) {
     
     tdName.textContent = theName;
 
-    const total = price * cartItem.quantity;
+    const subtotal = price * cartItem.quantity;
     
-    tdTotal.textContent = `$${total}`;
+    tdSubtotal.textContent = `$${subtotal}`;
 
-    tr.append(tdName, tdQuantity, tdTotal);
+    tr.append(tdName, tdQuantity, tdSubtotal);
 
     return tr;
 }

@@ -18,3 +18,7 @@ tr:nth-child(even) {
 tfoot {
     font-weight: bold;
 }
+
+/* .right {
+    text-align: right;
+} */
