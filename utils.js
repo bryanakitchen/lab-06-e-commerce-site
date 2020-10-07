@@ -1,5 +1,7 @@
 import { wigs } from './data.js';
 
+export const CART = 'CART';
+
 export function renderWig(wig) {
     const li = document.createElement('li');
     li.classList.add('wig');
@@ -24,6 +26,22 @@ export function renderWig(wig) {
 
     const button = document.createElement('button');
     button.textContent = 'Add to Cart';
+
+    button.addEventListener('click', () => {
+        
+        const cart = getFromLocalStorage(CART) || [];
+        const itemInCart = findById(cart, wig.id);
+
+        if (itemInCart === undefined) {
+            const newCartItem = {
+                id: wig.id,
+                quantity: 1
+            };
+            cart.push(newCartItem);
+        } else {
+            itemInCart.quantity++;
+        }
+    });
     
     li.append(name, image, description, price, button);
 
@@ -61,4 +79,15 @@ export function renderTableRow(cartItem) {
     tr.append(tdName, tdQuantity, tdSubtotal);
 
     return tr;
+}
+// this function will not return anything
+export function setInLocalStorage(key, value) {
+    const myString = JSON.stringify(value);
+    localStorage.setItem(key, myString);
+}
+
+export function getFromLocalStorage(key) {
+    const myKey = localStorage.getItem(key);
+    return JSON.parse(myKey);
+
 }

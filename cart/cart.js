@@ -1,6 +1,8 @@
-import { wigs, cart } from '../data.js';
-import { renderTableRow } from '../utils.js';
+import { wigs } from '../data.js';
+import { renderTableRow, CART, getFromLocalStorage } from '../utils.js';
 import { calculateTotal } from './cart-utils.js';
+
+const cart = getFromLocalStorage(CART) || [];
 
 const tbody = document.querySelector('#table');
 
