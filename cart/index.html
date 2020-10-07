@@ -14,13 +14,13 @@
 
 <body>
     <header>
+        <div class="my-header">Your Cart</div>
         <div class="gutter-right logo">
             <a href="/"><img src="../assets/home1.png"/></a>
         </div>
     </header>
     <main>
         <section class="main-section">
-           This is the cart
            <table>
                <thead>
                    <tr>
@@ -36,15 +36,15 @@
                <tfoot>
                     <tr>
                         <td colspan="2">Total</td>
-                        <td id="total-price">$89.98</td>
+                        <td id="total-price"></td>
                     </tr>
                </tfoot>
            </table>
-           <button>Place Order</button>
+           <br>
+           <button class="order-button" id="order-button">Place Order</button>
         </section>
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
     </footer>
 
     <script type="module" src="./cart.js"></script>
