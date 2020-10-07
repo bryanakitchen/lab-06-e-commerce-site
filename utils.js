@@ -63,7 +63,8 @@ export function renderTableRow(cartItem) {
     
     tdName.textContent = theName;
 
-    const subtotal = price * cartItem.quantity;
+    // new function 
+    const subtotal = calcLineItem(price, cartItem.quantity);
     
     tdSubtotal.textContent = `$${subtotal}`;
 
@@ -71,6 +72,13 @@ export function renderTableRow(cartItem) {
 
     return tr;
 }
+
+export function calcLineItem(price, quantity) {
+
+    const total = price * quantity;
+    return total;
+}
+
 // this function will not return anything
 export function setInLocalStorage(key, value) {
     const myString = JSON.stringify(value);
