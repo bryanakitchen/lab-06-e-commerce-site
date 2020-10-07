@@ -1,32 +1,26 @@
 
 body {
-    /* --color5: #ffffff; */
+    /*  this one!!!  */
+    --color5: #ffffff;
+/* FIX HEADER AND PRODUCTS PAGE THING  */
+    
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
     --footer-height: 25px;
-    font-family: 'Titillium Web', sans-serif;    
-    /* background: rgb(29, 10, 10) ; */
-    background:rgb(29, 10, 10) url('../assets/wig-wall.jpg') no-repeat fixed center;
+    
+    font-family: 'Titillium Web', sans-serif;    background: rgb(29, 10, 10) url('../assets/wig-wall.jpg') no-repeat fixed center;
 }
 
 .my-header {
+    background-color: pink;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* FIX THIS */
-    margin-right: 340px;
+    margin-right: 250px;
     font-size: 30px;
-    
-}
 
-header {
-    display: flex;
-    justify-content: flex-end;
-    background-color: rgb(236, 236, 236);
-    height: var(--header-height);
-    box-shadow: var(--shadow);
 }
 
 main {
@@ -61,7 +55,24 @@ section > ul {
     justify-content: space-around;
     align-items: center;
     font-size: 15px;
+    /* background-color: var(--color5); */
+    /* background-color: gray; */
 }
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--color3);
+    height: var(--header-height);
+    box-shadow: var(--shadow);
+}
+
+/* footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--color3);
+    box-shadow: var(--shadow);
+} */
 
 
 h2 {
@@ -85,11 +96,18 @@ content {
     width: 80%;
 }
 
-/* p {
-    margin: var(--gutter);
-} */
-    
-.link {
-    background-color: rgba(255, 255, 255, 0.856);
+p {
     margin: var(--gutter);
 }
+  
+/* footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: var(--footer-height);
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--color3);
+    box-shadow: var(--shadow);
+} */
+  
