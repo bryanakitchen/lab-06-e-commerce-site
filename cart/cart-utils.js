@@ -7,7 +7,7 @@ export function calculateTotal(wigs, cart) {
         const item = cart[i];
         const wig = findById(wigs, item.id);
         // use new funciton here
-        const subTotal = calcLineItem(item.quantity, wig.price);
+        const subTotal = calcLineItem(wig.price, item.quantity);
         total += subTotal;
     }
     return total;
