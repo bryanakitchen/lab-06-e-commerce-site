@@ -22,6 +22,8 @@ body {
     /* margin-right: 32%; */
     font-size: 30px;
     width: 100%;
+    /* border: green solid 10px;
+    position: fixed; */
 }
 
 header {
@@ -31,6 +33,7 @@ header {
     background-color: rgb(236, 236, 236);
     height: var(--header-height);
     box-shadow: var(--shadow);
+
 }
 
 main {
