@@ -2,6 +2,31 @@ import { addToCart } from './cart/cart-api.js';
 import { wigs } from './data.js';
 
 export const CART = 'CART';
+export const PRODUCTS = 'PRODUCTS';
+
+export function addWig(myObject) {
+
+    // Retrieve the existing products array
+    // DO NOT USE GETFROMLOCALSTORAGE() FUNCTION
+    const productArray = seedAndGetWigs(PRODUCTS);
+    // Push the new product into the array
+    productArray.push(myObject);
+    // Re-save the products array into localStorage
+    setInLocalStorage(PRODUCTS, productArray);
+}
+
+export function seedAndGetWigs() {
+    let localStorageWigs = JSON.parse(localStorage.getItem(PRODUCTS));
+    
+    if (!localStorageWigs) {
+        const stringyWigs = JSON.stringify(wigs);
+        
+        localStorage.setItem(PRODUCTS, stringyWigs);
+        localStorageWigs = wigs;
+    }
+    return localStorageWigs;
+}
+
 
 export function renderWig(wig) {
     const li = document.createElement('li');

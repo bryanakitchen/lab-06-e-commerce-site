@@ -1,7 +1,8 @@
-import { wigs } from '../data.js';
-import { renderTableRow, CART, getFromLocalStorage } from '../utils.js';
+import { renderTableRow, CART, getFromLocalStorage, seedAndGetWigs } from '../utils.js';
 import { calculateTotal } from './cart-utils.js';
 import { clearCart } from './cart-api.js';
+
+const wigs = seedAndGetWigs();
 
 const cart = getFromLocalStorage(CART) || [];
 
