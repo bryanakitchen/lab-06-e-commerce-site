@@ -5,7 +5,6 @@ export const CART = 'CART';
 export const PRODUCTS = 'PRODUCTS';
 
 export function addWig(myObject) {
-
     // Retrieve the existing products array
     // DO NOT USE GETFROMLOCALSTORAGE() FUNCTION
     const productArray = seedAndGetWigs(PRODUCTS);
