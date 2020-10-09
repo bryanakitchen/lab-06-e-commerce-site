@@ -1,4 +1,5 @@
 import { addToCart } from './cart/cart-api.js';
+import { wigs } from '../data.js';
 
 export const CART = 'CART';
 export const PRODUCTS = 'PRODUCTS';
