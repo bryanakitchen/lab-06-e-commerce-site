@@ -1,0 +1,30 @@
+.product-entry-links {
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+form {
+    direction: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.856);
+    padding: 12px;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+button {
+    width: 50%;
+    align-self: flex-start;
+    float: right;
+}
+
+input {
+    margin-left: 5px;
+}

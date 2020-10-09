@@ -1,5 +1,6 @@
-import { wigs } from '../data.js';
-import { renderWig } from '../utils.js';
+import { renderWig, seedAndGetWigs } from '../utils.js';
+
+const wigs = seedAndGetWigs();
 
 // In your products.js, you will need to:
 const ul = document.querySelector('#list');

@@ -20,6 +20,11 @@ tfoot {
     font-weight: bold;
 }
 
+.product-entry-links {
+    font-size: 15px;
+    margin-top: 30px;
+}
+
 /* .right {
     text-align: right;
 } */
