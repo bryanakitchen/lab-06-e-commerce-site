@@ -11,7 +11,7 @@ const tbody = document.querySelector('#table');
 for (let i = 0; i < cart.length; i++) {
     const item = cart[i];
 
-    const tr = renderTableRow(item);
+    const tr = renderTableRow(wigs, item);
 
     tbody.appendChild(tr);
 }

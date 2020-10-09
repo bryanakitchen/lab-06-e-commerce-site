@@ -1,5 +1,4 @@
 import { addToCart } from './cart/cart-api.js';
-import { wigs } from './data.js';
 
 export const CART = 'CART';
 export const PRODUCTS = 'PRODUCTS';
@@ -72,7 +71,7 @@ export function findById(someArray, someId) {
     }
 }
 
-export function renderTableRow(cartItem) {
+export function renderTableRow(wigs, cartItem) {
     const tr = document.createElement('tr');
     const tdName = document.createElement('td');
     const tdQuantity = document.createElement('td');
